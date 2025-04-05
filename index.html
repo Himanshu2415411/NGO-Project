@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Campaigns</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .events-section {
+            max-width: 800px;
+            margin: auto;
+        }
+        .event, .past-events {
+            background-color: #222;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .countdown {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .join-btn {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .join-btn:hover {
+            background-color: #0a5;
+        }
+        .event-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .past-event {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 300px;
+        }
+        .past-event img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="events-section">
+        <h2>Events & Campaigns</h2>
+        <p>Highlighting our key initiatives and encouraging participation.</p>
+
+        <div class="event">
+            <h3>Upcoming Event: Food Drive 2025</h3>
+            <p>Join us in feeding 10,000 people! Be a part of this noble cause.</p>
+            <div class="countdown" id="countdown"></div>
+            <button class="join-btn">Join Now</button>
+        </div>
+
+        <div class="past-events">
+            <h3>Past Events & Achievements</h3>
+            <div class="event-gallery">
+                <div class="past-event">
+                    <img src="fd1.png" alt="Event 1">
+                    <p>Food Drive 2024 - Successfully served 8,000 meals.</p>
+                </div>
+                <div class="past-event">
+                    <img src="fd2.jpg" alt="Event 2">
+                    <p>Winter Clothing Drive - Helped 5,000 people stay warm.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
