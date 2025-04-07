@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #48c6ef, #6f86d6);
+    color: white;
+    padding: 40px;
+    font-size: 1.2em;
+}
+
+/* Section Styling */
+section {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #48c6ef;
+}
+
+/* Story Section */
+.story img, .mission img {
+    width: 85%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 3px solid #6f86d6;
+}
+
+.quote {
+    font-style: italic;
+    color: #555;
+    margin-top: 15px;
+    background: #e3f2fd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Mission Section */
+.mission-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.mission-box {
+    background: #e8f5e9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+    min-width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Section */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.member {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.member:hover {
+    transform: scale(1.05);
+}
+
+.member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6f86d6;
+}
+
+.member h3 {
+    margin-top: 10px;
+    color: #48c6ef;
+}
+
+/* Partners Section */
+.partners-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.partners-container img {
+    width: 120px;
+    height: auto;
+    filter: grayscale(50%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.partners-container img:hover {
+    filter: grayscale(0%);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(135deg, #6f86d6, #48c6ef);
+    color: white;
+    margin-top: 30px;
+    font-weight: bold;
+}
+/* Team Group Picture */
+.team-group {
+    width: 80%;
+    max-width: 700px;
+    border-radius: 12px;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #6f86d6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
