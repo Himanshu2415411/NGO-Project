@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Website</title>
+    <link rel="stylesheet" href="ngo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="menu-toggle" onclick="toggleSidebar()">
+        &#9776; 
+      </div>
+
+
+<div id="sidebar" class="sidebar closed" role="navigation" aria-label="Sidebar navigation">
+    <span class="close-btn" onclick="closeSidebar()" aria-label="Close Sidebar" role="button">&times;</span>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog & News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="donate.html" class="donate-btn">Donate</a></li>
+    </ul>
+</div>
+
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="assets/logo_ngo.png" alt="NGO Logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog & News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html" class="donate-btn">Donate</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Making a Difference, One Life at a Time</h1>
+            <p>Join us in our mission to create a better future for underprivileged communities.<br> Your support can change lives.</p>
+            <a href="donate.html" class="hero-btn">Donate Now</a>
+        </div>
+    </section>
+
+    
+    <section class="blog">
+        <h1>Latest News & Stories</h1>
+        <div class="blog-slider-container"> 
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+            
+                <div class="swiper-slide blog-col">
+                    <img src="assets/blog1.jpg" alt="">
+                    <h3>NGO Expands Healthcare Initiatives</h3>
+                    <p>Read about how we are providing medical aid to underserved regions.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="swiper-slide blog-col">
+                    <img src="assets/blog2.jpg" alt="">
+                    <h3>Success Story: From Poverty to Education</h3>
+                    <p>Discover how our education programs have changed lives.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="swiper-slide blog-col">
+                    <img src="assets/blog3.png" alt="">
+                    <h3>Volunteer Efforts Making a Difference</h3>
+                    <p>See how our volunteers are helping transform communities.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            <div class="swiper-slide blog-col">
+                <img src="assets/blog4.jpg" alt="">
+                <h3>New School Opened for Underprivileged Children</h3>
+                <p>Learn about our efforts in improving access to education.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="swiper-slide blog-col">
+                <img src="assets/blog5.jpg" alt="">
+                <h3>Emergency Relief for Flood Victims</h3>
+                <p>We provided food and shelter to hundreds of displaced families.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+   
+    </div>
+    </section>
+
+    <section class="footer">
+        <h4>Contact Us</h4>
+        <p>Email: contact@ngo.org | Phone: +123 456 7890</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by NGO Team</p>
+    </section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: false,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            1024: { 
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 30
+            },
+            768: { 
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 20
+            },
+            480: { 
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                spaceBetween: 10
+            }
+        }
+    });
+    function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('sidebarOverlay');
+  sidebar.classList.toggle('closed');
+  overlay.classList.toggle('active');
+}
+
+
+</script>
+
+
+</body>
+</html>
