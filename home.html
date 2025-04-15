@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Website</title>
+    <link rel="stylesheet" href="ngo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="menu-toggle" onclick="toggleSidebar()">
+        &#9776; 
+      </div>
+
+
+<div id="sidebar" class="sidebar closed" role="navigation" aria-label="Sidebar navigation">
+    <span class="close-btn" onclick="closeSidebar()" aria-label="Close Sidebar" role="button">&times;</span>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog & News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="donate.html" class="donate-btn">Donate</a></li>
+    </ul>
+</div>
+
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+    <section class="home">
+        <nav>
+            <a href="index.html"> <img src="assets/logo_ngo.png" alt="NGO Logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog & News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html" class="donate-btn">Donate</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Making a Difference, One Life at a Time</h1>
+            <p>Join us in our mission to create a better future for underprivileged communities.<br> Your support can change lives.</p>
+            <a href="donate.html" class="hero-btn">Donate Now</a>
+        </div>
+    </section>
